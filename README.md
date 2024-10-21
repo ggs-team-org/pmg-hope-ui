@@ -12,3 +12,6 @@ jeżeli będzie prywatne, nie będzie działał mechanizm jsdelivr.com
 - https://templates.iqonic.design/hope-ui/documentation/html/dist/main/htmlStructure.html - struktura HTML
 - https://templates.iqonic.design/hope-ui/documentation/html/dist/main/cssStructure.html - struktura CSS
 - https://templates.iqonic.design/hope-ui/documentation/html/dist/main/javascriptStructure.html - struktura JS
+
+# dokumentacja wersji PRO
+https://templates.iqonic.design/hope-ui/pro/documentation/html/pages/main/gettingstarted.html
