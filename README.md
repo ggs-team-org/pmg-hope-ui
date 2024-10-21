@@ -1,3 +1,6 @@
+# repozytorium PUBLICZNE
+jeżeli będzie prywatne, nie będzie działał mechanizm jsdelivr.com
+
 # Pliki CSS z kolorami
 - dist/assets/css/hope-ui.css - oryginalny CSS dostarczony przez Hope UI
 - dist/assets/css/[color]-[color].css - CSS dostosowany do klienta
