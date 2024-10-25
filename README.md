@@ -14,4 +14,4 @@ czyszczenie cache: https://www.jsdelivr.com/tools/purge
 - https://templates.iqonic.design/hope-ui/documentation/html/dist/main/ - strona główna dokumentacji
 
 # dokumentacja Hope UI w wersji PRO
-https://templates.iqonic.design/hope-ui/pro/documentation/html/pages/main/gettingstarted.html
+- https://templates.iqonic.design/hope-ui/pro/documentation/html/pages/main/gettingstarted.html
