@@ -10,6 +10,10 @@ czyszczenie cache: https://www.jsdelivr.com/tools/purge
 # pliki JS
 - dist/assets/js/customizations/[color]-[color].js - plik zawierające wszystkie dynamicznie wstawiane elementy, które używamy na stronie (szablony, które należy dostosować do konkretnego zastosowania, znajdują się w folderze charts)
 
+# przykłady struktur HTML
+- https://github.com/iqonicdesignofficial/hope-ui-html-admin-dashboard/tree/main/dist
+- https://github.com/iqonicdesignofficial/hope-ui-design-system
+- 
 # dokumentacja Hope UI
 - https://templates.iqonic.design/hope-ui/documentation/html/dist/main/ - strona główna dokumentacji
 
