@@ -1,6 +1,6 @@
 # repozytorium PUBLICZNE
-jeżeli będzie prywatne, nie będzie działał CDN jsdelivr.com\
-generowanie linków: https://www.jsdelivr.com/github\
+jeżeli będzie prywatne, nie będzie działał CDN jsdelivr.com \
+generowanie linków: https://www.jsdelivr.com/github \
 czyszczenie cache: https://www.jsdelivr.com/tools/purge
 
 # Pliki CSS
