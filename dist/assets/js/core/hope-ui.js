@@ -47,7 +47,7 @@ Index Of Script
 /*---------------------------------------------------------------------
               custom
 -----------------------------------------------------------------------*/
-document.getElementsByClassName('sidebar data-scrollbar').style.maxHeight = 50vh;
+document.getElementsByClassName('sidebar data-scrollbar').style.maxHeight = "50vh";
 
 
 
