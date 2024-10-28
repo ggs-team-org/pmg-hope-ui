@@ -19997,7 +19997,7 @@ body.offcanvas-active {
   overflow: hidden;
 }
 .sidebar .data-scrollbar {
-  max-height: 92vh;
+  max-height: calc(100%-var(--bs-sidebar-header-offsetheight));
 }
 .sidebar .sidebar-header {
   border-bottom: 1px solid #f1f1f1;
