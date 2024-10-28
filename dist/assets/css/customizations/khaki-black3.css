@@ -25,7 +25,6 @@ hr {
 }
 
 :root {
-  --bs-sidebar-header-offsetheight: 100px;
   --bs-blue: #3a57e8;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -20253,6 +20252,7 @@ body.offcanvas-active {
 }
 
 body {
+  --bs-sidebar-header-offsetheight: unset;
   --sidebar-width: 16.2rem;
   --sidebar-transition: all;
   --sidebar-transition-duration: 400ms;
