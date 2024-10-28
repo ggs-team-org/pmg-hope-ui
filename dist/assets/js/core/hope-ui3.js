@@ -209,9 +209,10 @@ setupComponent(".data-scrollbar", elem => {
     })
 });
 
-let r = document.querySelector(':root');
+
 let sidebarHeaderOffsetHeight = document.getElementsByClassName('content sidebar-header d-flex align-items-center justify-content-start')[0].offsetHeight;
-r.style.setProperty('--bs-sidebar-header-offsetheight', `calc(100%-${sidebarHeaderOffsetHeight}px)`);
+let r = document.querySelector(':root');
+r.style.setProperty('--bs-sidebar-header-offsetheight', `${sidebarHeaderOffsetHeight}px)`);
 
 
 /*---------------------------------------------------------------------
