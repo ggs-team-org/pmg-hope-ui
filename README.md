@@ -6,6 +6,8 @@ czyszczenie cache: https://www.jsdelivr.com/tools/purge
 # pliki CSS
 - dist/assets/css/hope-ui.css - oryginalny CSS dostarczony przez Hope UI (używamy jako szablon)
 - dist/assets/css/customizations/[color]-[color].css - kopie hope-ui.css dostosowane do potrzeb klienta
+## customizacja:
+- dodać wartość --bs-sidebar-heading-height (wysokość sidebar-header + margin)
 
 # pliki JS
 - dist/assets/js/customizations/[color]-[color].js - plik zawierające wszystkie dynamicznie wstawiane elementy, które używamy na stronie (szablony, które należy dostosować do konkretnego zastosowania, znajdują się w folderze charts)
