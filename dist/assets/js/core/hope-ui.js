@@ -209,7 +209,7 @@ setupComponent(".data-scrollbar", elem => {
     })
 });
 
-document.getElementsByClassName('sidebar data-scrollbar').style.maxHeight = "50vh";
+document.getElementsByClassName('sidebar-body pt-0 data-scrollbar')[0].style.maxHeight = "50vh";
 
 
 /*---------------------------------------------------------------------
