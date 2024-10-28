@@ -19990,13 +19990,14 @@ body.offcanvas-active {
   color: var(--bs-primary);
   -webkit-box-shadow: 0 0 30px rgba(var(--bs-primary-rgb), 0.05);
           box-shadow: 0 0 30px rgba(var(--bs-primary-rgb), 0.05);
+	--sidebar-header-height: unset;
 }
 .sidebar .sidebar-body {
   padding-right: 1rem;
   overflow: hidden;
 }
 .sidebar .data-scrollbar {
-  max-height: 92vh;
+  max-height: calc(100vh - 231px);
 }
 .sidebar .sidebar-header {
   border-bottom: 1px solid #f1f1f1;
