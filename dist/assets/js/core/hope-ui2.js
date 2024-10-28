@@ -209,7 +209,9 @@ setupComponent(".data-scrollbar", elem => {
     })
 });
 
-document.getElementsByClassName('sidebar-body pt-0 data-scrollbar')[0].style.maxHeight = "50vh";
+let r = document.querySelector(':root');
+let sidebarHeaderOffsetHeight = document.getElementsByClassName('content sidebar-header d-flex align-items-center justify-content-start')[0].offsetHeight;
+r.style.setProperty('--bs-sidebar-header-offsetheight', `calc(100%-${sidebarHeaderOffsetHeight}px)`);
 
 
 /*---------------------------------------------------------------------
