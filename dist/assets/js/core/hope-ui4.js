@@ -211,8 +211,7 @@ setupComponent(".data-scrollbar", elem => {
 
 
 let sidebarHeaderOffsetHeight = document.getElementsByClassName('content sidebar-header d-flex align-items-center justify-content-start')[0].offsetHeight;
-let r = document.querySelector(':root');
-r.style.setProperty('--bs-sidebar-header-offsetheight', `${sidebarHeaderOffsetHeight}px)`);
+document.getElementsByClassName('sidebar-body pt-0 data-scrollbar')[0].maxHeight = `50vh`;
 
 
 /*---------------------------------------------------------------------
