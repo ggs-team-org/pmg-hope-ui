@@ -209,11 +209,6 @@ setupComponent(".data-scrollbar", elem => {
     })
 });
 
-
-let sidebarHeaderOffsetHeight = document.getElementsByClassName('content sidebar-header d-flex align-items-center justify-content-start')[0].offsetHeight;
-document.getElementsByClassName('sidebar-body pt-0 data-scrollbar')[0].maxHeight = `50vh`;
-
-
 /*---------------------------------------------------------------------
   Data tables
 -----------------------------------------------------------------------*/
