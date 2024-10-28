@@ -45,14 +45,6 @@ Index Of Script
 "use strict";
 
 /*---------------------------------------------------------------------
-              custom
------------------------------------------------------------------------*/
-
-document.getElementsByClassName('sidebar data-scrollbar').style.maxHeight = "50vh";
-
-
-
-/*---------------------------------------------------------------------
               Sticky-Nav
 -----------------------------------------------------------------------*/
 window.addEventListener('scroll', function () {
@@ -216,6 +208,9 @@ setupComponent(".data-scrollbar", elem => {
         continuousScrolling: false,
     })
 });
+
+document.getElementsByClassName('sidebar data-scrollbar').style.maxHeight = "50vh";
+
 
 /*---------------------------------------------------------------------
   Data tables
