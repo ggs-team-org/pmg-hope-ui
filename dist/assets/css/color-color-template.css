@@ -20,13 +20,15 @@ hr {
   opacity: 0.25;
 }
 
+:root {
+  --prefix: bs-;
+}
 
 :root {
   --bs-sidebar-heading-height: unset;
 }
 
 :root {
-  --prefix: bs-;
   --bs-blue: #3a57e8;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
