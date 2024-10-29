@@ -216,6 +216,7 @@ setupComponent(".data-scrollbar", elem => {
     Scrollbar.init(elem, {
         continuousScrolling: false,
     })
+    updateSidebarScrollbarHeight();
 });
 
 /*---------------------------------------------------------------------
