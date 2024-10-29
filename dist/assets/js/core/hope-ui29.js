@@ -344,9 +344,10 @@ if (sidebar !== null) {
     })
 }
 Array.from(sidebarToggleBtn, (sidebarBtn) => {
-    sidebarToggle(sidebarBtn)
+    sidebarToggle(sidebarBtn);
+    updateSidebarScrollbarHeight();
 })
-updateSidebarScrollbarHeight();
+
 /*---------------------------------------------------------------------------
                             Back To Top
 ----------------------------------------------------------------------------*/
