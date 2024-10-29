@@ -45,6 +45,12 @@ Index Of Script
 "use strict";
 
 /*---------------------------------------------------------------------
+              custom
+-----------------------------------------------------------------------*/
+let r = document.querySelector(':root');
+r.style.setProperty('--bs-sidebar-header-height', $('.sidebar-header').outerHeight(true));
+
+/*---------------------------------------------------------------------
               Sticky-Nav
 -----------------------------------------------------------------------*/
 window.addEventListener('scroll', function () {
@@ -290,6 +296,9 @@ const resizePlugins = () => {
             }
         }
     }
+    
+    let r = document.querySelector(':root');
+    r.style.setProperty('--bs-sidebar-header-height', $('.sidebar-header').outerHeight(true));
 }
 /*---------------------------------------------------------------------
               LoaderInit
