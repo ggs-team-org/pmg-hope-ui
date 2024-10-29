@@ -21,11 +21,14 @@ hr {
 }
 
 :root {
+  --bs-sidebar-heading-height: 100px;
+}
+
+:root {
   --prefix: bs-;
 }
 
 :root {
-	--bs-sidebar-heading-height: 100px;
   --bs-blue: #3a57e8;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
