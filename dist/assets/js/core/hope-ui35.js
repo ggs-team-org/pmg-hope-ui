@@ -315,6 +315,7 @@ const loaderInit = () => {
 -----------------------------------------------------------------------*/
 const sidebarToggle = (elem) => {
   elem.addEventListener('click', (e) => {
+        updateSidebarScrollbarHeight();
         const sidebar = document.querySelector('.sidebar')
         if (sidebar.classList.contains('sidebar-mini')) {
             sidebar.classList.remove('sidebar-mini')
@@ -322,7 +323,6 @@ const sidebarToggle = (elem) => {
             sidebar.classList.add('sidebar-mini')
         }
     })
-  updateSidebarScrollbarHeight();
 }
 
 const sidebarToggleBtn = document.querySelectorAll('[data-toggle="sidebar"]')
