@@ -26,7 +26,6 @@ hr {
 
 :root {
   --bs-sidebar-header-height: 231px;
-  --bs-sidebar-mini-header-height: 70px;
 }
 
 :root {
@@ -20001,10 +20000,7 @@ body.offcanvas-active {
   padding-right: 1rem;
   overflow: hidden;
 }
-.sidebar .sidebar-body .sidebar-mini .data-scrollbar {
-  max-height: calc(100vh - var(--bs-sidebar-mini-header-height) - 10px);
-}
-.sidebar .sidebar-body .data-scrollbar {
+.sidebar .data-scrollbar {
   max-height: calc(100vh - var(--bs-sidebar-header-height) - 10px);
 }
 .sidebar .sidebar-header {
