@@ -48,7 +48,7 @@ Index Of Script
               custom
 -----------------------------------------------------------------------*/
 let r = document.querySelector(':root');
-r.style.setProperty('--bs-sidebar-header-height', $('.sidebar-header').outerHeight(true));
+r.style.setProperty('--bs-sidebar-header-height', $('.sidebar-header').outerHeight(true).toString()+'px');
 
 /*---------------------------------------------------------------------
               Sticky-Nav
@@ -298,7 +298,7 @@ const resizePlugins = () => {
     }
     
     r = document.querySelector(':root');
-    r.style.setProperty('--bs-sidebar-header-height', $('.sidebar-header').outerHeight(true));
+    r.style.setProperty('--bs-sidebar-header-height', $('.sidebar-header').outerHeight(true).toString()+'px');
 }
 /*---------------------------------------------------------------------
               LoaderInit
