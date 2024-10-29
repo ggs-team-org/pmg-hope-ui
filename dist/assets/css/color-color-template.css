@@ -20137,7 +20137,6 @@ body.offcanvas-active {
   cursor: pointer;
   line-height: 1.5;
   color: inherit;
-  text-transform: capitalize;
   padding: 0.5rem 1rem;
   display: -webkit-box;
   display: -webkit-flex;
