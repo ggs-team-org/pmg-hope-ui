@@ -216,7 +216,6 @@ setupComponent(".data-scrollbar", elem => {
     Scrollbar.init(elem, {
         continuousScrolling: false,
     })
-    updateSidebarScrollbarHeight();
 });
 
 /*---------------------------------------------------------------------
@@ -345,7 +344,6 @@ if (sidebar !== null) {
 }
 Array.from(sidebarToggleBtn, (sidebarBtn) => {
     sidebarToggle(sidebarBtn);
-    updateSidebarScrollbarHeight();
 })
 
 /*---------------------------------------------------------------------------
