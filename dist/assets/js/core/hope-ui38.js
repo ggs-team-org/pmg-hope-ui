@@ -51,6 +51,7 @@ function updateSidebarScrollbarHeight() {
     let maxHeightValue = `calc(100vh - ${$('.sidebar-header').outerHeight(true).toString()}px - 10px)`
     $('.sidebar .data-scrollbar').css('max-height', maxHeightValue);
 }
+updateSidebarScrollbarHeight();
 /*---------------------------------------------------------------------
               Sticky-Nav
 -----------------------------------------------------------------------*/
