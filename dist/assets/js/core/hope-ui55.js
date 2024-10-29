@@ -297,7 +297,7 @@ const resizePlugins = () => {
             }
         }
     }
-    updateSidebarScrollbarHeight(); 
+    setTimeout(() => { updateSidebarScrollbarHeight(); }, 200);
 }
 /*---------------------------------------------------------------------
               LoaderInit
