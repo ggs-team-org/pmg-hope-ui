@@ -51,6 +51,7 @@ function updateSidebarScrollbarHeight() {
     let maxHeightValue = `calc(100vh - ${$('.sidebar-header').outerHeight(true).toString()}px - 10px)`
     $('.sidebar .data-scrollbar').css('max-height', maxHeightValue);
 }
+updateSidebarScrollbarHeight();
 
 /*---------------------------------------------------------------------
               Sticky-Nav
@@ -329,7 +330,6 @@ const sidebarToggle = (elem) => {
 
 const sidebarToggleBtn = document.querySelectorAll('[data-toggle="sidebar"]')
 const sidebar = document.querySelector('.sidebar-default')
-updateSidebarScrollbarHeight();
 if (sidebar !== null) {
     const sidebarActiveItem = sidebar.querySelectorAll('.active')
     Array.from(sidebarActiveItem, (elem) => {
@@ -345,6 +345,7 @@ if (sidebar !== null) {
 Array.from(sidebarToggleBtn, (sidebarBtn) => {
     sidebarToggle(sidebarBtn)
 })
+updateSidebarScrollbarHeight();
 /*---------------------------------------------------------------------------
                             Back To Top
 ----------------------------------------------------------------------------*/
