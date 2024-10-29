@@ -47,9 +47,10 @@ Index Of Script
 /*---------------------------------------------------------------------
               custom
 -----------------------------------------------------------------------*/
-let rootSelector = document.querySelector(':root');
-rootSelector.style.setProperty('--bs-sidebar-header-height', $('.sidebar-header').outerHeight(true).toString()+'px');
-rootSelector = undefined;
+function updateSidebarScrollbarHeight() {
+    let maxHeightValue = `calc(100vh - ${$('.sidebar-header').outerHeight(true).toString()}px - 10px)`
+    $('.sidebar .data-scrollbar').css('max-height', maxHeightValue);
+}
 
 /*---------------------------------------------------------------------
               Sticky-Nav
@@ -271,11 +272,7 @@ if (typeof AOS !== typeof undefined) {
               Resize Plugins
 -----------------------------------------------------------------------*/
 const resizePlugins = () => {
-    // sidebar-mini
-    let rootSelector = document.querySelector(':root');
-    rootSelector.style.setProperty('--bs-sidebar-header-height', $('.sidebar-header').outerHeight(true).toString()+'px');
-    rootSelector = undefined;
-  
+    // sidebar-mini  
     const tabs = document.querySelectorAll('.nav')
     const sidebarResponsive = document.querySelector('.sidebar-default')
     if (window.innerWidth < 1025) {
@@ -301,6 +298,7 @@ const resizePlugins = () => {
             }
         }
     }
+    updateSidebarScrollbarHeight();
 }
 /*---------------------------------------------------------------------
               LoaderInit
@@ -325,6 +323,7 @@ const sidebarToggle = (elem) => {
         } else {
             sidebar.classList.add('sidebar-mini')
         }
+        updateSidebarScrollbarHeight();
     })
 }
 
