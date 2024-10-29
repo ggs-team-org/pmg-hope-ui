@@ -319,11 +319,9 @@ const sidebarToggle = (elem) => {
         const sidebar = document.querySelector('.sidebar');
         if (sidebar.classList.contains('sidebar-mini')) {
             sidebar.classList.remove('sidebar-mini');
-            updateSidebarScrollbarHeight();
         } else {
             sidebar.classList.add('sidebar-mini');
-            updateSidebarScrollbarHeight();
-        }        
+        }
     })
 }
 
