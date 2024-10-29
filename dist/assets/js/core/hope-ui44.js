@@ -272,7 +272,6 @@ if (typeof AOS !== typeof undefined) {
 -----------------------------------------------------------------------*/
 const resizePlugins = () => {
     // sidebar-mini 
-    updateSidebarScrollbarHeight(); 
     const tabs = document.querySelectorAll('.nav')
     const sidebarResponsive = document.querySelector('.sidebar-default')
     if (window.innerWidth < 1025) {
@@ -298,7 +297,7 @@ const resizePlugins = () => {
             }
         }
     }
-       
+    updateSidebarScrollbarHeight(); 
 }
 /*---------------------------------------------------------------------
               LoaderInit
@@ -317,13 +316,13 @@ const loaderInit = () => {
 -----------------------------------------------------------------------*/
 const sidebarToggle = (elem) => {
   elem.addEventListener('click', (e) => {
-        updateSidebarScrollbarHeight();
-        const sidebar = document.querySelector('.sidebar')
+        const sidebar = document.querySelector('.sidebar');
         if (sidebar.classList.contains('sidebar-mini')) {
             sidebar.classList.remove('sidebar-mini');
         } else {
             sidebar.classList.add('sidebar-mini');
         }
+        updateSidebarScrollbarHeight();
     })
 }
 
