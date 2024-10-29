@@ -297,7 +297,6 @@ const resizePlugins = () => {
             }
         }
     }
-    setTimeout(() => { updateSidebarScrollbarHeight(); }, 200);
 }
 /*---------------------------------------------------------------------
               LoaderInit
@@ -371,12 +370,14 @@ if (backToTop !== null && backToTop !== undefined) {
 document.addEventListener('DOMContentLoaded', (event) => {
     resizePlugins()
     loaderInit()
+    updateSidebarScrollbarHeight()
 });
 /*---------------------------------------------------------------------
               Window Resize
 -----------------------------------------------------------------------*/
 window.addEventListener('resize', function (event) {
     resizePlugins()
+    updateSidebarScrollbarHeight()
 });
 
 /*---------------------------------------------------------------------
