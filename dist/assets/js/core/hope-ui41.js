@@ -278,29 +278,26 @@ const resizePlugins = () => {
         Array.from(tabs, (elem) => {
             if (!elem.classList.contains('flex-column') && elem.classList.contains('nav-tabs') && elem.classList.contains('nav-pills')) {
                 elem.classList.add('flex-column', 'on-resize');
-                updateSidebarScrollbarHeight();
             }
         })
         if (sidebarResponsive !== null) {
             if (!sidebarResponsive.classList.contains('sidebar-mini')) {
                 sidebarResponsive.classList.add('sidebar-mini', 'on-resize');
-                updateSidebarScrollbarHeight();
             }
         }
     } else {
         Array.from(tabs, (elem) => {
             if (elem.classList.contains('on-resize')) {
                 elem.classList.remove('flex-column', 'on-resize');
-                updateSidebarScrollbarHeight();
             }
         })
         if (sidebarResponsive !== null) {
             if (sidebarResponsive.classList.contains('sidebar-mini') && sidebarResponsive.classList.contains('on-resize')) {
                 sidebarResponsive.classList.remove('sidebar-mini', 'on-resize');
-                updateSidebarScrollbarHeight();
             }
         }
     }
+    updateSidebarScrollbarHeight();    
 }
 /*---------------------------------------------------------------------
               LoaderInit
@@ -322,11 +319,10 @@ const sidebarToggle = (elem) => {
         const sidebar = document.querySelector('.sidebar')
         if (sidebar.classList.contains('sidebar-mini')) {
             sidebar.classList.remove('sidebar-mini');
-            updateSidebarScrollbarHeight();
         } else {
             sidebar.classList.add('sidebar-mini');
-            updateSidebarScrollbarHeight();
         }
+        updateSidebarScrollbarHeight();
     })
 }
 
@@ -517,4 +513,4 @@ window.addEventListener('load', function () {
     })
 
 })();
-updateSidebarScrollbarHeight();
+
