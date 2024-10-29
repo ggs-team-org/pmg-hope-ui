@@ -25,7 +25,7 @@ hr {
 }
 
 :root {
-  --bs-sidebar-heading-height: unset;
+  --bs-sidebar-header-height: unset;
 }
 
 :root {
@@ -20000,7 +20000,7 @@ body.offcanvas-active {
   overflow: hidden;
 }
 .sidebar .data-scrollbar {
-  max-height: calc(100vh - var(--bs-sidebar-heading-height) - 10px);
+  max-height: calc(100vh - var(--bs-sidebar-header-height) - 10px);
 }
 .sidebar .sidebar-header {
   border-bottom: 1px solid #f1f1f1;
