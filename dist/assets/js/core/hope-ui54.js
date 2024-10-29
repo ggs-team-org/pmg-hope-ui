@@ -322,7 +322,7 @@ const sidebarToggle = (elem) => {
         } else {
             sidebar.classList.add('sidebar-mini');
         }
-        setTimeout(() => { updateSidebarScrollbarHeight(); }, 300);
+        setTimeout(() => { updateSidebarScrollbarHeight(); }, 400);
         
     })
 }
