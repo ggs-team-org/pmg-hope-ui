@@ -329,6 +329,7 @@ const sidebarToggle = (elem) => {
 
 const sidebarToggleBtn = document.querySelectorAll('[data-toggle="sidebar"]')
 const sidebar = document.querySelector('.sidebar-default')
+updateSidebarScrollbarHeight();
 if (sidebar !== null) {
     const sidebarActiveItem = sidebar.querySelectorAll('.active')
     Array.from(sidebarActiveItem, (elem) => {
