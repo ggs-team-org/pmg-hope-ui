@@ -49,7 +49,7 @@ Index Of Script
 -----------------------------------------------------------------------*/
 let rootSelector = document.querySelector(':root');
 rootSelector.style.setProperty('--bs-sidebar-header-height', $('.sidebar-header').outerHeight(true).toString()+'px');
-delete rootSelector;
+rootSelector = undefined;
 
 /*---------------------------------------------------------------------
               Sticky-Nav
@@ -274,7 +274,7 @@ const resizePlugins = () => {
     // sidebar-mini
     let rootSelector = document.querySelector(':root');
     rootSelector.style.setProperty('--bs-sidebar-header-height', $('.sidebar-header').outerHeight(true).toString()+'px');
-    delete rootSelector;
+    rootSelector = undefined;
   
     const tabs = document.querySelectorAll('.nav')
     const sidebarResponsive = document.querySelector('.sidebar-default')
