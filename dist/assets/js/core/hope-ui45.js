@@ -317,12 +317,12 @@ const loaderInit = () => {
 const sidebarToggle = (elem) => {
   elem.addEventListener('click', (e) => {
         const sidebar = document.querySelector('.sidebar');
+        updateSidebarScrollbarHeight();
         if (sidebar.classList.contains('sidebar-mini')) {
             sidebar.classList.remove('sidebar-mini');
         } else {
             sidebar.classList.add('sidebar-mini');
-        }
-        updateSidebarScrollbarHeight();
+        }        
     })
 }
 
