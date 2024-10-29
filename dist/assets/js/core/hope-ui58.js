@@ -183,15 +183,16 @@ setupComponent('[data-toggle="copy"]', (elem) => {
               CounterUp 2
 -----------------------------------------------------------------------*/
 if (window.counterUp !== undefined) {
-    const counterUp = window.counterUp["default"];
-    const counterUp2 = document.querySelectorAll('.counter')
+    //const counterUp = window.counterUp["default"];
+    //const counterUp2 = document.querySelectorAll('.counter')
     //Array.from(counterUp2, (el) => {
     setupComponent('.counter', (elem) => {
+        const counterUp = window.counterUp["default"];
         if (typeof Waypoint !== typeof undefined) {
             const waypoint = new Waypoint({
-                element: el,
+                element: elem,
                 handler: function () {
-                    counterUp(el, {
+                    counterUp(elem, {
                         duration: 1000,
                         delay: 10,
                     });
