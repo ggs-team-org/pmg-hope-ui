@@ -213,7 +213,8 @@ setupComponent('[data-toggle="slider-tab"]', (elem) => {
 setupComponent(".data-scrollbar", elem => {
     Scrollbar.init(elem, {
         continuousScrolling: false,
-    })
+    });
+    updateSidebarScrollbarHeight();
 });
 
 /*---------------------------------------------------------------------
