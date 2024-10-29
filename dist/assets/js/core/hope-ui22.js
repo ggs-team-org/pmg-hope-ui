@@ -47,8 +47,9 @@ Index Of Script
 /*---------------------------------------------------------------------
               custom
 -----------------------------------------------------------------------*/
-let r = document.querySelector(':root');
-r.style.setProperty('--bs-sidebar-header-height', $('.sidebar-header').outerHeight(true).toString()+'px');
+let rootSelector = document.querySelector(':root');
+rootSelector.style.setProperty('--bs-sidebar-header-height', $('.sidebar-header').outerHeight(true).toString()+'px');
+delete rootSelector;
 
 /*---------------------------------------------------------------------
               Sticky-Nav
@@ -271,6 +272,10 @@ if (typeof AOS !== typeof undefined) {
 -----------------------------------------------------------------------*/
 const resizePlugins = () => {
     // sidebar-mini
+    let rootSelector = document.querySelector(':root');
+    rootSelector.style.setProperty('--bs-sidebar-header-height', $('.sidebar-header').outerHeight(true).toString()+'px');
+    delete rootSelector;
+  
     const tabs = document.querySelectorAll('.nav')
     const sidebarResponsive = document.querySelector('.sidebar-default')
     if (window.innerWidth < 1025) {
@@ -296,9 +301,6 @@ const resizePlugins = () => {
             }
         }
     }
-    
-    r = document.querySelector(':root');
-    r.style.setProperty('--bs-sidebar-header-height', $('.sidebar-header').outerHeight(true).toString()+'px');
 }
 /*---------------------------------------------------------------------
               LoaderInit
