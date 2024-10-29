@@ -21,11 +21,11 @@ hr {
 }
 
 :root {
-  --bs-sidebar-heading-height: 100px;
+  --prefix: bs-;
 }
 
 :root {
-  --prefix: bs-;
+  --bs-sidebar-heading-height: 100px;
 }
 
 :root {
