@@ -271,7 +271,8 @@ if (typeof AOS !== typeof undefined) {
               Resize Plugins
 -----------------------------------------------------------------------*/
 const resizePlugins = () => {
-    // sidebar-mini  
+    // sidebar-mini 
+    updateSidebarScrollbarHeight(); 
     const tabs = document.querySelectorAll('.nav')
     const sidebarResponsive = document.querySelector('.sidebar-default')
     if (window.innerWidth < 1025) {
@@ -297,7 +298,7 @@ const resizePlugins = () => {
             }
         }
     }
-    updateSidebarScrollbarHeight();    
+       
 }
 /*---------------------------------------------------------------------
               LoaderInit
