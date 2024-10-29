@@ -347,8 +347,6 @@ if (sidebar !== null) {
 Array.from(sidebarToggleBtn, (sidebarBtn) => {
     sidebarToggle(sidebarBtn);
 })
-
-updateSidebarScrollbarHeight();
 /*---------------------------------------------------------------------------
                             Back To Top
 ----------------------------------------------------------------------------*/
@@ -519,3 +517,4 @@ window.addEventListener('load', function () {
     })
 
 })();
+updateSidebarScrollbarHeight();
