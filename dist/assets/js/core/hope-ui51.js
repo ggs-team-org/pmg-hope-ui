@@ -214,7 +214,6 @@ setupComponent(".data-scrollbar", elem => {
     Scrollbar.init(elem, {
         continuousScrolling: false,
     });
-    updateSidebarScrollbarHeight();
 });
 
 /*---------------------------------------------------------------------
@@ -323,6 +322,8 @@ const sidebarToggle = (elem) => {
         } else {
             sidebar.classList.add('sidebar-mini');
         }
+        setTimeout(() => { updateSidebarScrollbarHeight(); }, 1000);
+        
     })
 }
 
