@@ -183,8 +183,7 @@ setupComponent('[data-toggle="copy"]', (elem) => {
               CounterUp 2
 -----------------------------------------------------------------------*/
 if (window.counterUp !== undefined) {
-    setupComponent('.counter', (elem) => {
-  
+    setupComponent('.counter', (elem) => {  
         const counterUp = window.counterUp["default"];
         const counterUp2 = document.querySelectorAll('.counter')
         Array.from(counterUp2, (el) => {      
@@ -201,8 +200,7 @@ if (window.counterUp !== undefined) {
                     offset: "bottom-in-view",
                 });
             }
-        })
-      
+        })      
     })
 }
 /*---------------------------------------------------------------------
@@ -325,7 +323,7 @@ const sidebarToggle = (elem) => {
         } else {
             sidebar.classList.add('sidebar-mini');
         }
-        setTimeout(() => { updateSidebarScrollbarHeight(); }, 400);
+        //setTimeout(() => { updateSidebarScrollbarHeight(); }, 400);
         
     })
 }
@@ -374,14 +372,14 @@ if (backToTop !== null && backToTop !== undefined) {
 document.addEventListener('DOMContentLoaded', (event) => {
     resizePlugins()
     loaderInit()
-    updateSidebarScrollbarHeight()
+    //updateSidebarScrollbarHeight()
 });
 /*---------------------------------------------------------------------
               Window Resize
 -----------------------------------------------------------------------*/
 window.addEventListener('resize', function (event) {
     resizePlugins()
-    updateSidebarScrollbarHeight()
+    //updateSidebarScrollbarHeight()
 });
 
 /*---------------------------------------------------------------------
