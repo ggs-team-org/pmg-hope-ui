@@ -25,6 +25,10 @@ hr {
 }
 
 :root {
+  --bs-sidebar-header-height: 223px;
+}
+
+:root {
   --bs-blue: #3a57e8;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -19997,7 +20001,7 @@ body.offcanvas-active {
   overflow: hidden;
 }
 .sidebar .data-scrollbar {
-  max-height: unset; /*calc(100vh - var(--bs-sidebar-header-height) - 10px);*/
+  max-height: calc(100vh - var(--bs-sidebar-header-height) - 8px);
 }
 .sidebar .sidebar-header {
   border-bottom: 1px solid #f1f1f1;
