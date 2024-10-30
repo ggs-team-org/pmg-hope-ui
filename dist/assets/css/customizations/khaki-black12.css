@@ -20006,6 +20006,7 @@ body.offcanvas-active {
 .sidebar .sidebar-header {
   border-bottom: 1px solid #f1f1f1;
   margin-bottom: 0.5rem;
+  height: var(--bssidebar-header-height);
 }
 .sidebar .sidebar-logo {
   -webkit-transition-property: opacity, -webkit-transform;
