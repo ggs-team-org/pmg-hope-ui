@@ -211,13 +211,22 @@ setupComponent('[data-toggle="slider-tab"]', (elem) => {
         new SliderTab(elem)
     }
 });
-
+/*
 setupComponent(".data-scrollbar", elem => {
     Scrollbar.init(elem, {
         continuousScrolling: false,
     });
 });
-
+*/
+let Scrollbar
+if (typeof Scrollbar !== typeof null) {
+  if (document.querySelectorAll(".data-scrollbar").length) {
+    Scrollbar = window.Scrollbar
+    Scrollbar.init(document.querySelector('.data-scrollbar'), {
+      continuousScrolling: false,
+    })
+  }
+}
 /*---------------------------------------------------------------------
   Data tables
 -----------------------------------------------------------------------*/
