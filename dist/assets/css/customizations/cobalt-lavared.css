@@ -25,11 +25,7 @@ hr {
 }
 
 :root {
-  --bs-sidebar-header-height: unset;
-}
-
-:root {
-  --bs-sidebar-header-height: 100px;
+  --bs-sidebar-header-height: 259px;
 }
 
 :root {
