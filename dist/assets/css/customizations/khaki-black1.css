@@ -28,6 +28,17 @@ hr {
   --bs-sidebar-header-height: 223px;
 }
 
+@media (max-width: 830px) {
+	#buttonOnImage {
+    display: none;
+  }
+
+  #navigationBarLogo {
+    margin: auto;
+  }
+}
+
+
 :root {
   --bs-blue: #3a57e8;
   --bs-indigo: #6610f2;
