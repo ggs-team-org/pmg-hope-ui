@@ -5209,7 +5209,7 @@ textarea.form-control-lg {
   border-top: 0;
 }
 
-. {
+.card-body {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
