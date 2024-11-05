@@ -35,6 +35,7 @@ hr {
 
   #navigationBarLogo {
     margin: auto;
+    transform: translateX(28px);
   }
 }
 
