@@ -14376,7 +14376,7 @@ textarea.form-control-lg {
   padding-bottom: 0;
 }
 .card .card-header[aria-expanded=false] {
-  padding-bottom: inherit;
+  padding-bottom: var(--bs-card-cap-padding-y);
 }
 .card .card-header .header-title .card-title {
   margin-bottom: 0;
