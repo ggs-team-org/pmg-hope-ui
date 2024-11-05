@@ -5243,9 +5243,13 @@ textarea.form-control-lg {
   background-color: var(--bs-card-cap-bg);
   border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
 }
-.card-header:first-child {
+.card-header:first-child[aria-expanded=true] {
   -webkit-border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius) 0 0;
           border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius) 0 0;
+}
+.card-header:first-child[aria-expanded=false] {
+  -webkit-border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius);
+          border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius);
 }
 
 .card-footer {
@@ -20270,6 +20274,7 @@ body.offcanvas-active {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    align-items: center;
 }
 
 .card .card-header[aria-expanded=true] .right-icon {
@@ -20285,6 +20290,7 @@ body.offcanvas-active {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
+    align-items: center;
 }
 
 body {
