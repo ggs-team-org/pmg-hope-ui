@@ -30,7 +30,7 @@ hr {
 
 @media (max-width: 830px) {
 	#buttonOnImage {
-    display: none;
+    display: none !important;
   }
 
   #navigationBarLogo {
