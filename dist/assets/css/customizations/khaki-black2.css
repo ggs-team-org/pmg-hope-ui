@@ -19689,9 +19689,11 @@ thead, tbody, tfoot, tr, td, th {
 }
 .logo-main .logo-mini {
   display: none;
+  text-align: center;
 }
 .logo-main .logo-normal {
   display: block;
+  text-align: center;
 }
 
 .boxed-fancy::before {
