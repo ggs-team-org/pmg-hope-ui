@@ -5209,7 +5209,7 @@ textarea.form-control-lg {
   border-top: 0;
 }
 
-.card-body {
+. {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
@@ -14378,7 +14378,7 @@ textarea.form-control-lg {
   padding-bottom: var(--bs-card-cap-padding-y);
 }
 
-.card .card-header .collapse .card-body {
+.card .collapse .card-body {
   padding: 0 var(--bs-card-spacer-x) var(--bs-card-spacer-y) var(--bs-card-spacer-x);
 }
 .card .card-header .header-title .card-title {
