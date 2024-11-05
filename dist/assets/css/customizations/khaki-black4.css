@@ -14386,8 +14386,8 @@ textarea.form-control-lg {
   padding-bottom: var(--bs-card-cap-padding-y);
 }
 
-.card .card-header[aria-expanded=true] .collapse .card-body,
-.card .card-header[aria-expanded=false] .collapse .card-body {
+.card .collapse .card-body,
+.card .collapsing .card-body {
   padding: 0 var(--bs-card-spacer-x) var(--bs-card-spacer-y) var(--bs-card-spacer-x);
 }
 
