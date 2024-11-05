@@ -14372,6 +14372,12 @@ textarea.form-control-lg {
   border: 0;
   padding-bottom: 0;
 }
+.card .card-header[aria-expanded=true] {
+  padding-bottom: 0;
+}
+.card .card-header[aria-expanded=false] {
+  padding-bottom: inherit;
+}
 .card .card-header .header-title .card-title {
   margin-bottom: 0;
 }
