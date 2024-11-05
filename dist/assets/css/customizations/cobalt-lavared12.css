@@ -14378,7 +14378,8 @@ textarea.form-control-lg {
   padding-bottom: var(--bs-card-cap-padding-y);
 }
 
-.card .collapse .card-body {
+.card .collapse .card-body,
+.card .collapsing .card-body {
   padding: 0 var(--bs-card-spacer-x) var(--bs-card-spacer-y) var(--bs-card-spacer-x);
 }
 .card .card-header .header-title .card-title {
