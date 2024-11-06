@@ -9,7 +9,7 @@
 */
 
 :root {
-  --bs-sidebar-header-height: unset; /* change */
+  --bs-sidebar-header-height: 181px;
 }
 
 :root {
@@ -48,8 +48,8 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #8A92A6;
-  --bs-body-bg: #F5F6FA;
   --bs-body-color-rgb: 138, 146, 166;
+  --bs-body-bg: #F5F6FA;
   --bs-body-bg-rgb: 245, 246, 250;
   --bs-link-color: #3a57e8;
   --bs-link-hover-color: #2e46ba;
