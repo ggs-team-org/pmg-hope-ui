@@ -9,7 +9,7 @@
 */
 
 :root {
-  --bs-sidebar-header-height: 181px;
+  --bs-sidebar-header-height: unset; /* change */
 }
 
 :root {
