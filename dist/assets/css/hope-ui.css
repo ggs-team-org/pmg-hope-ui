@@ -5277,7 +5277,7 @@ textarea.form-control-lg {
   top: 0;
   left: 0;
   opacity: 0;
-  transition: opacity 300ms ease-out;
+  transition: opacity var(--bs-ease-out-duration) ease-out;
 }
 .card:hover .card-img-hover {
   opacity: 1;
