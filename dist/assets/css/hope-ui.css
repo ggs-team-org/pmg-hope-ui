@@ -51,6 +51,8 @@ hr {
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
   --bs-code-color: #d63384;
+  --bs-ease-in-duration: 0.3s;
+  --bs-ease-out-duration: 0.3s;
 }
 
 *,
@@ -5268,6 +5270,17 @@ textarea.form-control-lg {
           border-bottom-right-radius: var(--bs-card-inner-border-radius);
   -webkit-border-bottom-left-radius: var(--bs-card-inner-border-radius);
           border-bottom-left-radius: var(--bs-card-inner-border-radius);
+}
+
+.card-img-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 300ms ease-out;
+}
+.card:hover .card-img-hover {
+  opacity: 1;
 }
 
 .card-group > .card {
