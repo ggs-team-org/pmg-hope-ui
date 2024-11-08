@@ -14337,6 +14337,7 @@ textarea.form-control-lg {
   margin-bottom: 0;
   border: 0;
   padding-bottom: 0;
+  border-radius: var(--bs-border-radius-lg);
 }
 
 .card .card-header[aria-expanded=true],
