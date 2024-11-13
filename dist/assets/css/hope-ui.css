@@ -2634,7 +2634,7 @@ textarea.form-control-lg {
 }
 .form-select[multiple], .form-select[size]:not([size="1"]) {
   padding-right: 1rem;
-  background-image: none;
+  /*background-image: none;*/
 }
 .form-select:disabled {
   background-color: var(--bs-gray-200);
