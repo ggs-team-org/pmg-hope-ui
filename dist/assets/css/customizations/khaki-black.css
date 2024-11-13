@@ -11,11 +11,7 @@
   --bs-sidebar-header-height: 223px;
 }
 
-@media (max-width: 830px) {
-	#buttonOnImage {
-    display: none !important;
-  }
-
+@media (max-width: 1024px) {
   #navigationBarLogo {
     margin: auto;
     transform: translateX(28px);
