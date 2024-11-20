@@ -14343,7 +14343,7 @@ textarea.form-control-lg {
 
 .card .card-header[aria-expanded=true],
 .card .card-header[aria-expanded=false],
-.card .card-header:has(> .right-icon-wrapper) {
+.card .card-header:has(> .right-icon) {
   padding-bottom: var(--bs-card-cap-padding-y);
 }
 
@@ -20241,7 +20241,7 @@ body.offcanvas-active {
 }
 
 .card .card-header[aria-expanded=false] .right-icon,
-.card .card-header .right-icon-wrapper[aria-expanded=false] .right-icon{
+.card .card-header .right-icon[aria-expanded=false] {
     -webkit-transition: var(--sidebar-transition);
     -o-transition: var(--sidebar-transition);
     transition: var(--sidebar-transition);
@@ -20259,7 +20259,7 @@ body.offcanvas-active {
 }
 
 .card .card-header[aria-expanded=true] .right-icon,
-.card .card-header .right-icon-wrapper[aria-expanded=true] .right-icon {
+.card .card-header .right-icon[aria-expanded=true] {
     -webkit-transition: var(--sidebar-transition);
     -o-transition: var(--sidebar-transition);
     transition: var(--sidebar-transition);
