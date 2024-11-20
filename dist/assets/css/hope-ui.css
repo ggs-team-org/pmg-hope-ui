@@ -14342,7 +14342,8 @@ textarea.form-control-lg {
 }
 
 .card .card-header[aria-expanded=true],
-.card .card-header[aria-expanded=false] {
+.card .card-header[aria-expanded=false],
+.card .card-header:has(> .right-icon-wrapper) {
   padding-bottom: var(--bs-card-cap-padding-y);
 }
 
