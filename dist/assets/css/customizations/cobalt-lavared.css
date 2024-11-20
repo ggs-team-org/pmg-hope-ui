@@ -59,3 +59,8 @@
   --bs-popover-header-color: var(--bs-white);
   --bs-popover-header-bg: var(--bs-primary);
 }
+
+.breadcrumb {
+    --bs-breadcrumb-divider-color: var(--bs-white);
+    --bs-breadcrumb-divider: '→';
+}
