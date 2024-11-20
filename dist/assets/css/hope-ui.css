@@ -20239,7 +20239,8 @@ body.offcanvas-active {
           transition-timing-function: var(--sidebar-transition-function-ease-in-out);
 }
 
-.card .card-header[aria-expanded=false] .right-icon {
+.card .card-header[aria-expanded=false] .right-icon,
+.card .card-header .right-icon-wrapper[aria-expanded=false] .right-icon{
     -webkit-transition: var(--sidebar-transition);
     -o-transition: var(--sidebar-transition);
     transition: var(--sidebar-transition);
@@ -20256,7 +20257,8 @@ body.offcanvas-active {
     align-items: center;
 }
 
-.card .card-header[aria-expanded=true] .right-icon {
+.card .card-header[aria-expanded=true] .right-icon,
+.card .card-header .right-icon-wrapper[aria-expanded=true] .right-icon {
     -webkit-transition: var(--sidebar-transition);
     -o-transition: var(--sidebar-transition);
     transition: var(--sidebar-transition);
