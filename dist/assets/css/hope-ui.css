@@ -25463,3 +25463,10 @@ pre[class*=language-] {
   height: fit-content;
   width: fit-content;
 }
+
+/*!
+SPECIFIC TO PMG
+*/
+#navbarSupportedContent li {
+  margin-left: 1rem;
+}
