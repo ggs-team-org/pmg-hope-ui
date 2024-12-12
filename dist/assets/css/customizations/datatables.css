@@ -1,0 +1,12 @@
+
+div.dt-container div.dt-layout-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0.75em 0;
+}
+
+.dt-layout-row .pagination {
+    margin-bottom: 0;
+}
