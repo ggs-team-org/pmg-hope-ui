@@ -665,7 +665,7 @@ progress {
   }
 }
 .row {
-  --bs-gutter-x: 2rem;
+  --bs-gutter-x: 0;
   --bs-gutter-y: 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -21194,7 +21194,7 @@ body {
 }
 
 /*
- * Background color 
+ * Background color
  */
 .bg-soft-primary {
   color: #344ed1;
