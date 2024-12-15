@@ -11,3 +11,14 @@ div.dt-container div.dt-layout-row {
 .dt-layout-row .pagination {
     margin-bottom: 0;
 }
+
+span.datatable-highlight {
+    color: black;
+    font-size: 0.8em;
+    display: inline-block;
+    padding: 0;
+    border: 1px solid currentColor;
+    border-radius: 10px 10px;
+    padding-inline: 10px;
+    background-color: rgba(0,0,0, 0.05);
+}
