@@ -5,6 +5,7 @@ div.dt-container div.dt-layout-row {
     align-items: center;
     width: 100%;
     margin: 0.75em 0;
+    --bs-gutter-x: 0;
 }
 
 .dt-layout-row .pagination {
