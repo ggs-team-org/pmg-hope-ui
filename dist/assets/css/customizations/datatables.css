@@ -20,5 +20,17 @@ span.datatable-highlight {
     border: 1px solid currentColor;
     border-radius: 10px 10px;
     padding-inline: 10px;
-    background-color: rgba(0,0,0, 0.05);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.dt-layout-row .pagination {
+    justify-content: flex-end;
+}
+
+.dt-layout-cell.dt-layout-start {
+    padding-left: 20px;
+}
+
+.dt-layout-cell.dt-layout-end {
+    padding-right: 20px;
 }
