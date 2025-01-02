@@ -146,7 +146,8 @@ hr {
 }
 
 .open > .dropdown-menu {
-  display: block;
+    display: block;
+    right: 0;
 }
 
 .type {
