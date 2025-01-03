@@ -6,6 +6,11 @@
 * NOTE: This file contains the styling for Template.
 * NOT IN USE
 */
+td > a {
+    text-decoration: underline;
+    color: #0172C5;
+}
+
 .table-here * td:empty {
     display: none;
 }
