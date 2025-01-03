@@ -6,6 +6,23 @@
 * NOTE: This file contains the styling for Template.
 * NOT IN USE
 */
+td:empty {
+    display: none;
+}
+
+tbody tr:last-child  > td { 
+    border: white !important;
+}
+
+.table-here .row:nth-child(even of .row) {
+    background-color: #F4F8FC;
+    border-radius: 10px;
+}
+
+label {
+    display: inline;
+}
+
 :focus {
     outline: none;
 }
