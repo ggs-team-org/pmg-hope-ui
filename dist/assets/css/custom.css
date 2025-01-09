@@ -19,6 +19,14 @@
     color: #FFFFFF;
 }
 
+.nav-link > i {
+    color: #FFFFFF;
+}
+
+.nav-link:not(.active) > i {
+    color: var(--bs-body-color);
+}
+
 .nav-link .default-icon {
     font-weight: 600;
     line-height: 28px;
