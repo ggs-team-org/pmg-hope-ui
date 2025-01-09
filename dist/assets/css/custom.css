@@ -6,6 +6,25 @@
 * NOTE: This file contains the styling for Template.
 * NOT IN USE
 */
+.nav-link .item-name {
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.nav-link:not(.active) .item-name {
+    color: var(--bs-body-color);
+}
+
+.nav-link .item-name {
+    color: #FFFFFF;
+}
+
+.nav-link .default-icon {
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--bs-gray-500);
+}
+
 td > a {
     text-decoration: underline;
     color: #0172C5;
