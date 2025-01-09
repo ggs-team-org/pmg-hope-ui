@@ -49,6 +49,7 @@ td > a {
 .table-here > .row:nth-child(even of .row) {
     background-color: #F4F8FC;
     border-radius: 10px;
+    padding: 10px 0px;
 }
 
 .table-here * label {
