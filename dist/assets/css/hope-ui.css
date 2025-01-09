@@ -25468,6 +25468,6 @@ pre[class*=language-] {
 SPECIFIC TO PMG
 */
 #navbarSupportedContent li {
-  margin-left: 1rem;
+  margin-left: 0rem;
   font-size: 0.9rem;
 }
