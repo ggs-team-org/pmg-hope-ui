@@ -527,3 +527,42 @@ window.addEventListener('load', function () {
     })
 
 })();
+
+// Collapse stata persistence
+(() => {
+    const collapseState = (() => {
+
+        function computeFinalKey(key) {
+            return `collapseState.${key}`;
+        }
+
+        return {
+            setState(key, newState) {
+                localStorage.setItem(computeFinalKey(key), JSON.stringify(newState));
+            },
+            getState(key) {
+                const value = localStorage.getItem(computeFinalKey(key));
+                return value ? JSON.parse(value) : undefined;
+            }
+        }
+    })();
+    setupComponent('[data-bs-toggle="collapse"]', function initializeCollapseState(elem) {
+        const $target = $('#' + elem.getAttribute('aria-controls'));
+        const targetKey = $target.attr('id');
+        $target.on('show.bs.collapse', () => {
+            collapseState.setState(targetKey, {expanded: true});
+        }).on('hide.bs.collapse', () => {
+            collapseState.setState(targetKey, {expanded: false});
+        })
+        const state = collapseState.getState(targetKey);
+        if (state) {
+            if (state.expanded) {
+                $target.addClass('show');
+                $(elem).attr('aria-expanded', 'true');
+            } else {
+                $target.removeClass('show');
+                $(elem).addClass('collapsed').attr('aria-expanded', 'false');
+            }
+        }
+    });
+})();
