@@ -51,6 +51,7 @@ function updateSidebarScrollbarHeight() {
     let maxHeightValue = `calc(100vh - ${$('.sidebar-header').outerHeight(true).toString()}px - 10px)`
     $('.sidebar .data-scrollbar').css('max-height', maxHeightValue);
 }
+
 /*---------------------------------------------------------------------
               Sticky-Nav
 -----------------------------------------------------------------------*/
@@ -183,10 +184,10 @@ setupComponent('[data-toggle="copy"]', (elem) => {
               CounterUp 2
 -----------------------------------------------------------------------*/
 if (window.counterUp !== undefined) {
-    setupComponent('.counter', (elem) => {  
+    setupComponent('.counter', (elem) => {
         const counterUp = window.counterUp["default"];
         const counterUp2 = document.querySelectorAll('.counter')
-        Array.from(counterUp2, (el) => {      
+        Array.from(counterUp2, (el) => {
             if (typeof Waypoint !== typeof undefined) {
                 const waypoint = new Waypoint({
                     element: el,
@@ -200,7 +201,7 @@ if (window.counterUp !== undefined) {
                     offset: "bottom-in-view",
                 });
             }
-        })      
+        })
     })
 }
 /*---------------------------------------------------------------------
@@ -220,12 +221,12 @@ setupComponent(".data-scrollbar", elem => {
 */
 let Scrollbar
 if (typeof Scrollbar !== typeof null) {
-  if (document.querySelectorAll(".data-scrollbar").length) {
-    Scrollbar = window.Scrollbar
-    Scrollbar.init(document.querySelector('.data-scrollbar'), {
-      continuousScrolling: false,
-    })
-  }
+    if (document.querySelectorAll(".data-scrollbar").length) {
+        Scrollbar = window.Scrollbar
+        Scrollbar.init(document.querySelector('.data-scrollbar'), {
+            continuousScrolling: false,
+        })
+    }
 }
 /*---------------------------------------------------------------------
   Data tables
@@ -282,7 +283,7 @@ if (typeof AOS !== typeof undefined) {
               Resize Plugins
 -----------------------------------------------------------------------*/
 const resizePlugins = () => {
-    // sidebar-mini 
+    // sidebar-mini
     const tabs = document.querySelectorAll('.nav')
     const sidebarResponsive = document.querySelector('.sidebar-default')
     if (window.innerWidth < 1025) {
@@ -325,7 +326,7 @@ const loaderInit = () => {
               Sidebar Toggle
 -----------------------------------------------------------------------*/
 const sidebarToggle = (elem) => {
-  elem.addEventListener('click', (e) => {
+    elem.addEventListener('click', (e) => {
         const sidebar = document.querySelector('.sidebar');
         if (sidebar.classList.contains('sidebar-mini')) {
             sidebar.classList.remove('sidebar-mini');
@@ -333,7 +334,7 @@ const sidebarToggle = (elem) => {
             sidebar.classList.add('sidebar-mini');
         }
         //setTimeout(() => { updateSidebarScrollbarHeight(); }, 400);
-        
+
     })
 }
 
@@ -527,3 +528,38 @@ window.addEventListener('load', function () {
 
 })();
 
+// Collapse stata persistence
+(() => {
+    const collapseState = (() => {
+
+        function computeFinalKey(key) {
+            return `collapseState.${key}`;
+        }
+
+        return {
+            setState(key, newState) {
+                localStorage.setItem(computeFinalKey(key), JSON.stringify(newState));
+            },
+            getState(key) {
+                return localStorage.getItem(computeFinalKey(key));
+            }
+        }
+    })();
+    setupComponent('[data-bs-toggle="collapse"]', function initializeCollapseState(elem) {
+        const $target = $('#' + elem.getAttribute('aria-controls'));
+        const targetKey = $target.attr('id');
+        $target.on('show.bs.collapse', () => {
+            collapseState.setState(targetKey, {expanded: true});
+        }).on('hide.bs.collapse', () => {
+            collapseState.setState(targetKey, {expanded: false});
+        })
+        const state = collapseState.getState(targetKey);
+        if (state) {
+            if (state.expanded) {
+                $target.addClass('show');
+            } else {
+                $target.removeClass('show');
+            }
+        }
+    });
+})();
