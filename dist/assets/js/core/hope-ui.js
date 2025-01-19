@@ -531,11 +531,9 @@ window.addEventListener('load', function () {
 // Collapse stata persistence
 (() => {
     const collapseState = (() => {
-
         function computeFinalKey(key) {
             return `collapseState.${key}`;
         }
-
         return {
             setState(key, newState) {
                 localStorage.setItem(computeFinalKey(key), JSON.stringify(newState));
@@ -546,6 +544,8 @@ window.addEventListener('load', function () {
             }
         }
     })();
+
+
     setupComponent('[data-bs-toggle="collapse"]', function initializeCollapseState(elem) {
         const $target = $('#' + elem.getAttribute('aria-controls'));
         const targetKey = $target.attr('id');
