@@ -6,6 +6,12 @@
 * NOTE: This file contains the styling for Template.
 * NOT IN USE
 */
+
+.table-striped>tbody>tr:nth-of-type(2n)>* {
+    --bs-table-accent-bg: none !important;
+    color: #232d42 !important;
+}
+
 .quickfind {
     width: 100%;
     box-sizing: border-box;
