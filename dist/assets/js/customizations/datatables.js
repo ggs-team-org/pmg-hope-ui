@@ -21,3 +21,16 @@ $.extend( true, DataTable.ext.classes, {
         full: 'dt-layout-full col-sm-12'
     }
 } );
+
+
+DataTable.defaults.layout.topStart = {
+    buttons: [
+        {
+            extend: 'colvis',
+            columns: ':not([data-colvis="false"])'
+        }
+    ]
+};
+
+
+DataTable.Buttons.defaults.dom.button.className = 'btn btn-light btn-sm';

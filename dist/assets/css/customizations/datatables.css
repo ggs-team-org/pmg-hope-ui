@@ -54,12 +54,14 @@ div.dt-processing {
     padding: 2px;
     z-index: 10;
 }
+
 div.dt-processing > div:last-child {
     position: relative;
     width: 80px;
     height: 15px;
     margin: 1em auto;
 }
+
 div.dt-processing > div:last-child > div {
     position: absolute;
     top: 0;
@@ -70,18 +72,22 @@ div.dt-processing > div:last-child > div {
     background: rgb(var(--dt-row-selected));
     animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
+
 div.dt-processing > div:last-child > div:nth-child(1) {
     left: 8px;
     animation: datatables-loader-1 0.6s infinite;
 }
+
 div.dt-processing > div:last-child > div:nth-child(2) {
     left: 8px;
     animation: datatables-loader-2 0.6s infinite;
 }
+
 div.dt-processing > div:last-child > div:nth-child(3) {
     left: 32px;
     animation: datatables-loader-2 0.6s infinite;
 }
+
 div.dt-processing > div:last-child > div:nth-child(4) {
     left: 56px;
     animation: datatables-loader-3 0.6s infinite;
@@ -95,6 +101,7 @@ div.dt-processing > div:last-child > div:nth-child(4) {
         transform: scale(1);
     }
 }
+
 @keyframes datatables-loader-3 {
     0% {
         transform: scale(1);
@@ -103,6 +110,7 @@ div.dt-processing > div:last-child > div:nth-child(4) {
         transform: scale(0);
     }
 }
+
 @keyframes datatables-loader-2 {
     0% {
         transform: translate(0, 0);
@@ -120,4 +128,38 @@ div.dt-processing > div:last-child > div:nth-child(4) {
 
 .dt-length select {
     width: 90px;
+}
+
+.buttons-colvis .dropdown-menu .dt-button {
+    padding-left: 23px;
+    position: relative;
+}
+
+.buttons-colvis .dropdown-menu .dt-button.dt-button-active:after {
+    content: "\2713";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    color: var(--bs-primary);
+    font-size: 16px;
+}
+
+.buttons-colvis .dropdown-menu .dt-button:before {
+    display: block;
+    width: 16px;
+    height: 16px;
+    content: "";
+    position: absolute;
+    left: -2px;
+    border: 1px solid;
+    top: 7px;
+    border-radius: 2px;
+}
+
+.buttons-colvis .dropdown-menu .dt-button:active {
+    background-color: transparent;
+    color: var(--bs-dropdown-link-color);
+    text-decoration: none;
 }
