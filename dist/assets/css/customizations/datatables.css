@@ -130,12 +130,12 @@ div.dt-processing > div:last-child > div:nth-child(4) {
     width: 90px;
 }
 
-.buttons-colvis .dropdown-menu .dt-button {
+.dt-button-collection.dropdown-menu .dt-button {
     padding-left: 23px;
     position: relative;
 }
 
-.buttons-colvis .dropdown-menu .dt-button.dt-button-active:after {
+.dt-button-collection.dropdown-menu .dt-button.dt-button-active:after {
     content: "\2713";
     position: absolute;
     top: 4px;
@@ -146,7 +146,7 @@ div.dt-processing > div:last-child > div:nth-child(4) {
     font-size: 16px;
 }
 
-.buttons-colvis .dropdown-menu .dt-button:before {
+.dt-button-collection.dropdown-menu .dt-button:before {
     display: block;
     width: 16px;
     height: 16px;
@@ -158,7 +158,7 @@ div.dt-processing > div:last-child > div:nth-child(4) {
     border-radius: 2px;
 }
 
-.buttons-colvis .dropdown-menu .dt-button:active {
+.dt-button-collection.dropdown-menu .dt-button:active {
     background-color: transparent;
     color: var(--bs-dropdown-link-color);
     text-decoration: none;
