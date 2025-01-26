@@ -13732,6 +13732,8 @@
 
     // PMG ITQer customisations
     DataTable.defaults.layout.bottomStart = ['info', 'pageLength'];
+    DataTable.defaults.layout.topStart = undefined;
+
 
     return DataTable;
 }));
