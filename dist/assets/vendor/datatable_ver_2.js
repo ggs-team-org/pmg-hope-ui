@@ -13685,7 +13685,7 @@
             input: "form-control input-sm"
         },
         length: {
-            select: "form-control input-sm"
+            select: "form-select form-select-sm"
         },
         processing: {
             container: "dt-processing panel panel-default"
@@ -13730,6 +13730,8 @@
         return $('<ul/>').addClass('pagination').append(buttonEls);
     };
 
+    // PMG ITQer customisationsa
+    DataTable.defaults.layout.bottomEnd = ['pageLength', 'paging'];
 
     return DataTable;
 }));
