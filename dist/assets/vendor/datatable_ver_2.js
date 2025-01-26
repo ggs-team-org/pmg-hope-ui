@@ -13730,8 +13730,8 @@
         return $('<ul/>').addClass('pagination').append(buttonEls);
     };
 
-    // PMG ITQer customisationsa
-    DataTable.defaults.layout.bottomEnd = ['pageLength', 'paging'];
+    // PMG ITQer customisations
+    DataTable.defaults.layout.bottomStart = ['info', 'pageLength'];
 
     return DataTable;
 }));
