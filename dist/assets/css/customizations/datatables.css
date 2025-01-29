@@ -164,4 +164,26 @@ div.dt-processing > div:last-child > div:nth-child(4) {
     text-decoration: none;
 }
 
+div.dt-scroll-body {
+    thead,
+    tfoot {
+        tr {
+            height: 0;
+
+            th, td {
+                height: 0 !important;
+                padding-top: 0px !important;
+                padding-bottom: 0px !important;
+                border-top-width: 0px !important;
+                border-bottom-width: 0px !important;
+
+                div.dt-scroll-sizing {
+                    height: 0 !important;
+                    overflow: hidden !important;
+                }
+            }
+        }
+    }
+}
+
 
