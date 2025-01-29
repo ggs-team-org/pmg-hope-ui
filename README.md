@@ -27,7 +27,7 @@ czyszczenie cache: https://www.jsdelivr.com/tools/purge
 ## zustand
 https://bundlejs.com/?q=zustand%405.0.2%2Fvanilla%2Czustand%405.0.2%2Fvanilla%2Fshallow&treeshake=%5B*%5D%2C%5B*%5D&config=%7B%22esbuild%22%3A%7B%22format%22%3A%22iife%22%2C%22minify%22%3Afalse%2C%22globalName%22%3A%22zustand%22%7D%7D
 ## sweetalerts2
-https://bundlejs.com/?q=zustand%405.0.2%2Fvanilla%2Czustand%405.0.2%2Fvanilla%2Fshallow&treeshake=%5B*%5D%2C%5B*%5D&config=%7B%22esbuild%22%3A%7B%22format%22%3A%22iife%22%2C%22minify%22%3Afalse%2C%22globalName%22%3A%22zustand%22%7D%7D
+https://bundlejs.com/?q=sweetalert%402.1.2&config=%7B%22esbuild%22%3A%7B%22format%22%3A%22iife%22%2C%22minify%22%3Afalse%2C%22globalName%22%3A%22SweetAlerts%22%7D%7D
 ## Datatables
 
 https://datatables.net/download/
