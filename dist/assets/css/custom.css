@@ -788,3 +788,8 @@ body.uikit .btn-download {
 .select2-search-choice-close {
     top: 6px;
 }
+
+
+.select2-results {
+    overscroll-behavior: contain;
+}
