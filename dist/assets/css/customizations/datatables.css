@@ -130,6 +130,28 @@ div.dt-processing > div:last-child > div:nth-child(4) {
     width: 90px;
 }
 
+.dt-length > label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.dt-length > label > select {
+    color: var(--bs-primary);
+    border-radius: 8px;
+    padding: 8px 10px 8px 15px;
+    min-height: 40px;
+}
+
+.dt-length select {
+    width: 90px;
+}
+
+.pagination > li > button {
+    padding: 6px 12px;
+    min-height: 40px;
+}
+
 .dt-button-collection.dropdown-menu .dt-button {
     padding-left: 23px;
     position: relative;
