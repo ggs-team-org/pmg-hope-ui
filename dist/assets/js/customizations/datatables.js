@@ -23,6 +23,9 @@ $.extend( true, DataTable.ext.classes, {
     }
 } );
 
+DataTable.defaults.language = {
+    lengthMenu: 'Show _MENU_ records'
+};
 
 DataTable.defaults.layout.topStart = {
     buttons: [
