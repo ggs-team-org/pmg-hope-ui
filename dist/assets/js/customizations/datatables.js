@@ -1,4 +1,5 @@
-DataTable.defaults.layout.bottomStart = ['info', 'pageLength'];
+DataTable.defaults.layout.bottomStart = ['info'];
+DataTable.defaults.layout.bottomEnd = ['pageLength', 'paging'];
 DataTable.defaults.layout.topStart = undefined;
 
 $.extend( true, DataTable.ext.classes, {
