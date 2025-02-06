@@ -31,10 +31,11 @@ DataTable.defaults.layout.topStart = {
     buttons: [
         {
             extend: 'colvis',
-            columns: ':not([data-colvis="false"])'
+            columns: ':not([data-colvis="false"])',
+            text: '<i class="fa-regular fa-table-columns"></i> Toggle columns'
         }
     ]
 };
 
 
-DataTable.Buttons.defaults.dom.button.className = 'btn btn-light btn-sm';
+DataTable.Buttons.defaults.dom.button.className = 'btn btn-sm';
