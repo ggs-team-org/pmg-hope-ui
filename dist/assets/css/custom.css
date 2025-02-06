@@ -6,6 +6,10 @@
 * NOTE: This file contains the styling for Template.
 * NOT IN USE
 */
+#FiltersCount {
+    line-height: 20px;
+}
+
 .buttons-colvis::after {
     content: none !important;
 }
