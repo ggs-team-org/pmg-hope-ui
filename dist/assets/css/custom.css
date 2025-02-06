@@ -6,6 +6,14 @@
 * NOTE: This file contains the styling for Template.
 * NOT IN USE
 */
+.buttons-colvis::after {
+    content: none !important;
+}
+
+.btn {
+    font-size: var(--bs-body-font-size) !important; 
+}
+
 .WorkItemView #btn_validateAndSaveWWL { display: none; }
 
 .table-striped>tbody>tr:nth-of-type(2n)>* {
