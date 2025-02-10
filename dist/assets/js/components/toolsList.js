@@ -67,14 +67,14 @@ const componentToolsList = (() => {
                         html: true,
                         offset: '[0, 0]',
                         sanitize: false,
-                        delay: {show: 700, hide: 0},
+                        delay: {show: 700, hide: 200},
                         container: 'body',
                         template: '<div class="popover" role="tooltip" style="max-width: 400px;"><h3 class="popover-header"></h3><div class="popover-body"></div></div>',
                         title() {
-                            return $(this).siblings('[data-ref="popover-container"]')[0].querySelector('[data-ref="popover-title"]').cloneNode(true);
+                            return $(this).next('[data-ref="popover-container"]')[0].querySelector('[data-ref="popover-title"]').cloneNode(true);
                         },
                         content() {
-                            return $(this).siblings('[data-ref="popover-container"]')[0].querySelector('[data-ref="popover-content"]').cloneNode(true);
+                            return $(this).next('[data-ref="popover-container"]')[0].querySelector('[data-ref="popover-content"]').cloneNode(true);
                         }
                     });
                     isLoading = false;
