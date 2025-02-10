@@ -57,17 +57,23 @@ const componentToolsList = (() => {
                 variables: store.getState()
             })
                 .then((data) => {
+                    function schedulePopoverHideForElement(element) {
+                        const timeoutId = setTimeout(function () {
+                            $(element).popover('hide');
+                        }, 300);
+                        $(element).data('timeoutId', timeoutId);
+                    }
+
                     list = data.TableOutput;
                     element.innerHTML = render(data);
                     $(element).find('[data-ref="popover-trigger"]').popover({
                         animation: false,
-                        trigger: 'hover',
+                        trigger: 'manual',
                         placement: 'bottom',
                         fallbackPlacements: ['right', 'left'],
                         html: true,
                         offset: '[0, 0]',
                         sanitize: false,
-                        delay: {show: 700, hide: 200},
                         container: 'body',
                         template: '<div class="popover" role="tooltip" style="max-width: 400px;"><h3 class="popover-header"></h3><div class="popover-body"></div></div>',
                         title() {
@@ -76,7 +82,21 @@ const componentToolsList = (() => {
                         content() {
                             return $(this).next('[data-ref="popover-container"]')[0].querySelector('[data-ref="popover-content"]').cloneNode(true);
                         }
-                    });
+                    })
+                        .on('mouseenter', function () {
+                            const current = $(this);
+                            clearTimeout(current.data('popoverTimeoutId'));
+                            current.popover('show');
+
+                            $('.popover').on('mouseenter', function () {
+                                clearTimeout(current.data('popoverTimeoutId'));
+                            }).on('mouseleave', function () {
+                                schedulePopoverHideForElement(current);
+                            });
+                        })
+                        .on('mouseleave', function () {
+                            schedulePopoverHideForElement(this);
+                        })
                     isLoading = false;
                 }, () => {
                     isLoading = false;
