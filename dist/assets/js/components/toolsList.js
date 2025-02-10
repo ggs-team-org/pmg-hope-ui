@@ -57,13 +57,6 @@ const componentToolsList = (() => {
                 variables: store.getState()
             })
                 .then((data) => {
-                    function schedulePopoverHideForElement(element) {
-                        const timeoutId = setTimeout(function () {
-                            $(element).popover('hide');
-                        }, 300);
-                        $(element).data('timeoutId', timeoutId);
-                    }
-
                     list = data.TableOutput;
                     element.innerHTML = render(data);
                     $(element).find('[data-ref="popover-trigger"]').popover({
@@ -91,11 +84,17 @@ const componentToolsList = (() => {
                             $('.popover').on('mouseenter', function () {
                                 clearTimeout(current.data('popoverTimeoutId'));
                             }).on('mouseleave', function () {
-                                schedulePopoverHideForElement(current);
+                                current.popover('hide');
                             });
                         })
                         .on('mouseleave', function () {
-                            schedulePopoverHideForElement(this);
+                            const current = $(this);
+                            const timeoutId = setTimeout(function () {
+                                if (!$('.popover:hover').length) {
+                                    current.popover('hide');
+                                }
+                            }, 300);
+                            current.data('timeoutId', timeoutId);
                         })
                     isLoading = false;
                 }, () => {
